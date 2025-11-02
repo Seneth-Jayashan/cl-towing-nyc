@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main>{children}</main>
+        {children} {/* <-- REMOVED <main> WRAPPER */}
         <Footer />
       </body>
     </html>

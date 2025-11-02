@@ -7,7 +7,8 @@
 */
 @layer utilities {
   @keyframes pulse-bright {
-    0%, 100% {
+    0%,
+    100% {
       opacity: 1;
       box-shadow: 0 0 10px #06b6d4, 0 0 20px #06b6d4;
     }
@@ -19,4 +20,12 @@
   .animate-pulse-bright {
     animation: pulse-bright 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
+}
+html {
+  background-color: #000000;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* The background property is GONE. */
 }
