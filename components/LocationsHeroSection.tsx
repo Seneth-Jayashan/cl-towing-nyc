@@ -21,11 +21,11 @@ export function LocationsHeroSection() {
       <div className="absolute inset-0 z-10 bg-black/60"></div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-4 w-full h-full flex items-center pt-16">
+      <div className="relative z-20 container mx-auto px-4 w-full h-full flex items-center justify-center pt-16">
         {' '}
         {/* pt-16 for navbar height */}
         <motion.div
-          className="max-w-2xl" // Left-aligned
+          className="max-w-2xl text-center" // Center-aligned
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}

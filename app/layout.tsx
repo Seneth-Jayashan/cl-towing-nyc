@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { MobileCtaBar } from '@/components/MobileCtaBar'; // <-- 1. IMPORT IT
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Navbar />
         {children} {/* <-- REMOVED <main> WRAPPER */}
         <Footer />
+        <MobileCtaBar /> {/* <-- 2. ADD IT HERE (inside <body>) */}
       </body>
     </html>
   );

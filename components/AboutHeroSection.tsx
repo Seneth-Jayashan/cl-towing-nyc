@@ -20,13 +20,14 @@ export function AboutHeroSection() {
       <div className="absolute inset-0 z-10 bg-black/60"></div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-4 w-full h-full flex items-center pt-16">
+      <div className="relative z-20 container mx-auto px-4 w-full h-full flex items-center justify-center pt-16">
         {' '}
+        {/* <-- 1. ADDED justify-center HERE */}
         {/* pt-16 for navbar height */}
         <motion.div
-          className="max-w-2xl" // Aligns content to the left
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          className="max-w-full text-center" // This is correct
+          initial={{ opacity: 0, y: 20 }} // <-- 2. CHANGED animation to slide up
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-shadow-lg">

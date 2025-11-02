@@ -100,9 +100,9 @@ export function Footer() {
               href="https://sjaywebsolutions.lk" // Your company website
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium hover:text-cyan-400 transition-colors"
+              className="font-medium hover:text-cyan-400 transition-colors pb-24 md:pb-0"
             >
-              S Jay Web Solutions (Pvt) Ltd
+              S JAY Web Solutions (Pvt) Ltd
             </a>
           </p>
         </div>
