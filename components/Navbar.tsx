@@ -70,7 +70,7 @@ export function Navbar() {
           <Link href="/about" className={linkClasses}>
             About
           </Link>
-          <Link href="#services" className={linkClasses}>
+          <Link href="/services" className={linkClasses}>
             Services
           </Link>
           <Link href="/locations" className={linkClasses}>
@@ -129,7 +129,7 @@ export function Navbar() {
                 About
               </Link>
               <Link
-                href="#services"
+                href="/services"
                 className="text-gray-900 font-medium hover:text-cyan-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
