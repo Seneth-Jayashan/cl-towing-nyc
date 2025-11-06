@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { CheckCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 export function WhyChooseUsSection() {
   const features = [
@@ -24,18 +24,18 @@ export function WhyChooseUsSection() {
     },
   ];
 
-  const listVariants = {
-    visible: (i: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: i * 0.2,
-        duration: 0.5,
-        ease: 'easeOut',
-      },
-    }),
-    hidden: { opacity: 0, x: -20 },
-  };
+const listVariants: Variants = {
+  hidden: { opacity: 0, x: -30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.5,
+      ease: ["easeOut"] as any // ✅ makes TS happy
+    }
+  })
+};
 
   return (
     <section className="py-20 bg-gray-50 overflow-hidden">

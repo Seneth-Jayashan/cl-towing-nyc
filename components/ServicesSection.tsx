@@ -9,18 +9,21 @@ import {
 import { motion } from 'framer-motion';
 
 // Define the animation properties
-const cardVariants = {
+import { Variants } from "framer-motion";
+
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.1, // Faster stagger
+      delay: i * 0.2,
       duration: 0.5,
-      ease: 'easeInOut',
-    },
-  }),
+      ease: ["easeOut"] as any // ✅ Type-safe fix
+    }
+  })
 };
+
 
 export function ServicesSection() {
   const services = [

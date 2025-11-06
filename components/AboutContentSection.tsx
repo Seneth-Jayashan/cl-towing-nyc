@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { FC } from "react";
 import { motion } from 'framer-motion';
 import {
   ShieldCheck,
@@ -13,8 +14,15 @@ import {
   Heart,
 } from 'lucide-react';
 
+interface ValueCardProps {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+  delay?: number;
+}
+
 // --- Card for Core Values ---
-const ValueCard = ({ icon: Icon, title, description, delay = 0 }) => (
+const ValueCard: FC<ValueCardProps> = ({ icon: Icon, title, description, delay = 0 }) => (
   <motion.div
     className="bg-gray-50 p-6 rounded-lg shadow-md text-center"
     initial={{ opacity: 0, y: 30 }}
