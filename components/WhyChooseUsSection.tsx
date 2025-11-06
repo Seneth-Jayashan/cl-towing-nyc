@@ -93,7 +93,7 @@ const listVariants: Variants = {
             transition={{ duration: 0.7, ease: 'easeOut' }}
           >
             <Image
-              src="https://cltowingnyc.com/wp-content/uploads/2025/07/Photo-2-1024x536.jpeg"
+              src="/towing-img-4.png"
               alt="Professional tow truck driver"
               width={600} // Increased size for better quality
               height={314}
